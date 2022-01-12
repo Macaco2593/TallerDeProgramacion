@@ -9,45 +9,69 @@
 </head>
 <style>
     .a{
-        background: aquamarine;
+        background: rgb(192, 255, 234);
+        margin-right: 47%;
     }
 
+    .title {
+        text-align: center;
+        font-size: 50px;
+    }
     body{
-        background: gray;
+        background-color: lightgreen;
+    }
+    .list {
+        font-size: large;
+        margin-left: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 15%;
+        border: 10px solid #3EC483;
+        background-color: #5DEAA8;
+    }
+    #paragraph {
+        text-align: center;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #video {
+        margin-left: 35%;
     }
 </style>
 
-
 <body>
-    <h1>
+    <h1 class="title">
         Lo que aprendí.
     </h1>
+   <div class="list">
     <ol>
         <li>
             HTML es un lenguaje de escritura y funciona con etiquetas que abren y cierran
         </li>
 
         <li>
-            La etiqueta "h1" es para titulos, la "p" es para parrafos, la "ol" para una lista ordenada, "ul" lista ordenada y "li" para los elementos de la lista
+            La etiqueta <b>"h1"</b> es para titulos, la <b>"p"</b> es para parrafos, la <b>"ol"</b> para una lista ordenada,
+             <b>"ul"</b> lista ordenada y <b>"li"</b> para los elementos de la lista
         </li>
 
         <li>
-            los comentarios son ignorados por el sistema y se colocan con "//" para una linea y "/* */" para un bloque completo
+            Los comentarios son ignorados por el sistema y se colocan con <b>"//"</b> para una linea y <b>"/* */"</b> para un bloque completo
         </li>
 
         <li>
-            Para usar CSS en html se usa la etiqueta "style"
+            Para usar <b>CSS</b> en html se usa la etiqueta <b>"style"</b>
         </li>
 
         <li class="a">
-            EL fondo de linea se cambia dentro de la etiqeuta style con el estilo "background"
+            EL fondo de linea se cambia dentro de la etiqueta style con el estilo <b>"background"</b>
         </li>
         <li>
-            el fondo de pantalla se cambia dentro de la etiqueta style referenciando al body completo
+            El fondo de pantalla se cambia dentro de la etiqueta style referenciando al body completo
         </li>
     </ol>
-    <p>
-        Esto es un parrafo aparte con la etiqueta "p"
+   </div>
+    <p id="paragraph">
+        Esto es un parrafo aparte con la etiqueta <b>"p"</b>
     </p>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kGD3oluee7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
